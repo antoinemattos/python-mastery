@@ -9,7 +9,7 @@ def calculate_price(file_path):
     with open(file_path, "r") as f:
         for line in f:
             split_line = line.split()
-            cost_for_all_shares += int(split_line[1]) + float(split_line[2])
+            cost_for_all_shares += int(split_line[1]) * float(split_line[2])
         print(f"Cost for all shares: {cost_for_all_shares:.2f}")
 
 
