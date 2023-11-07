@@ -1,7 +1,5 @@
-# readrides.py
-
-from collections import namedtuple
 import csv
+from collections import namedtuple
 
 
 def read_rides_as_tuples(filename):
@@ -152,4 +150,3 @@ if __name__ == "__main__":
     rows = read_rides_as_class_with_slots("../../Data/ctabus.csv")
     print("Memory Use for slots: Current %d, Peak %d" % tracemalloc.get_traced_memory())
     tracemalloc.stop()
-
